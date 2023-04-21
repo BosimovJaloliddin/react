@@ -1,11 +1,16 @@
-import Navbar from "./navabr";
-function App() {
-  return (
-    <div>
-      <Navbar />
-      <div>hellow my frend {90 + 100}</div>
-    </div>
-  );
+import React from "react";
+
+class App extends React.Component {
+  render() {
+    const { data } = this.props;
+    return (
+      <>
+        <div>
+          {data.id} {data.name}
+        </div>
+      </>
+    );
+  }
 }
 
 export default App;
