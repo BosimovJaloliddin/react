@@ -4,18 +4,17 @@ import App from "./App";
 
 let root = ReactDOM.createRoot(document.getElementById("root"));
 
-let arr = [
-  { id: 1, name: "Ali1" },
-  { id: 2, name: "Ali2" },
-  { id: 3, name: "Ali3" },
-  { id: 4, name: "Ali4" },
-  { id: 5, name: "Ali5" },
-  { id: 6, name: "Ali6" },
+let students = [
+  { id: 1, name: "Ali" },
+  { id: 2, name: "Ali" },
+  { id: 3, name: "Ali" },
+  { id: 4, name: "Ali" },
+  { id: 5, name: "Ali" },
 ];
 
 root.render(
   <React.StrictMode>
-    {arr.map((value) => {
+    {students.map((value) => {
       return <App data={value} />;
     })}
   </React.StrictMode>

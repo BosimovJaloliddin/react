@@ -1,16 +1,26 @@
+// function test(pr) {
+//   console.log(`hi ${pr}`);
+//   console.log(`hi ${pr}`);
+//   console.log(`hi ${pr}`);
+//   console.log(`hi ${pr}`);
+//   console.log(`hi ${pr}`);
+// }
+
+// test("webbrain");
+// test("academy");
 import React from "react";
 
 class App extends React.Component {
   render() {
-    const { data } = this.props;
+    console.log(this.props);
     return (
       <>
         <div>
-          {data.id} {data.name}
+          {this.props.data.id} {this.props.data.name}
         </div>
+        <hr />
       </>
     );
   }
 }
-
 export default App;
